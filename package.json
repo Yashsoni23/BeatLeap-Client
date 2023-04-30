@@ -1,0 +1,27 @@
+{
+  "name": "beatleap",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "tailwind": "tailwindcss -i ./src/styles/globals.css -o ./src/styles/tailwind.output.css --watch"
+  },
+  "dependencies": {
+    "@next/font": "13.3.1",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "http-proxy-middleware": "^2.0.6",
+    "next": "13.3.1",
+    "next-connect": "^0.13.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.11.0",
+    "react-spotify-web-playback": "^0.14.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
