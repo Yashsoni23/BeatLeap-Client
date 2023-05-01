@@ -81,7 +81,7 @@ export default function Home() {
   }
 
 
-  const premiumToken = "BQAYN3HKTFJl9rzW0j7C1S_3liX_pTbTr-oY6dtAKQWg3znZNQbuNljxWo2XDT8m4ecg0FE8iRSLgrO8y6d1uGIalYXPu8gVIKWieRkFiVPxpjGu125jt3XZMbFazNM8ocznUPkh-K-MUicaiNxtD10b13UFdSQHJb8joNIcAKd2cFH38l5i2Fka52RRb4s6sexAAXaEc-XVakbttcIhlJDIcuxyFfDDlIZbQHAicmEQ5Gujl60LHs7SFQ4PZPY2S3g"
+  const premiumToken = "BQC5EzpVz-xz3rsfoEn6OmTZMBIqaFhNdfODEfvcmtwdk9CuUK2Yf8BRVGsvcTgdH-lFGKng3xl4rzHrthFj18Zsi3IKeGVWlmUvq5dnmkDZesI2-nytMH5u0z3JD799zGOk0atWbPCop3ujE6dXqVlERZ9Rzh1J60FVjUWofC7HZmZ9k_2SvuQA4udExqg2ptgQ0FVYWTth2MzeixQ02809OCIa5UpXoe07Yor3Ad7HMaXYzfHYI3Co1iVwyVAZquk"
   const Auth = (token) => {
     setToken(token)
   }
@@ -96,7 +96,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>{token?.access_token}</h1>
+        <h1>{`${JSON.stringify(token)}`}</h1>
         <Link href="/login" className='text-white'>Login</Link>
         <Login/>
         

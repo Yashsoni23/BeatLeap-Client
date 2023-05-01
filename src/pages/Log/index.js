@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react'
 
 export default function Login() {
-    const AUTH_URI = "https://accounts.spotify.com/authorize?client_id=1860adcf9c8d460ca7419707e2b9bd67&response_type=code&redirect_uri=https://beatleap.netlify.app&scope=user-read-private%20user-read-email"
+    const AUTH_URI = "https://accounts.spotify.com/authorize?client_id=006dbf49774c4c07bc93b4ef1f006518&response_type=code&redirect_uri=http://localhost:3000/api/auth/callback/spotify&scope=playlist-read-private%20playlist-modify-private%20streaming%20user-read-private%20user-read-email"
 //   const [tracks, setTracks] = useState();
   async function getNewToken() {
     const Token = await axios.get('http://localhost:5000/auth/login', {
